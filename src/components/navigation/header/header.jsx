@@ -13,7 +13,7 @@ function Header() {
 			<div className=''>
 				<NavLink to="/"
 					className={({ isActive }) =>
-						`px-8 py-3 font-vermin tracking-widest transition-all ease-in-out ${
+						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
 						isActive ? 'text-rose-500' : 'text-white'
 						}`
 					}
@@ -24,7 +24,7 @@ function Header() {
 				<NavLink
 					to="/about"
 					className={({ isActive }) =>
-						`px-8 py-3 font-vermin tracking-widest transition-all ease-in-out ${
+						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
 						isActive ? 'text-rose-500' : 'text-white'
 						}`
 					}
@@ -35,7 +35,7 @@ function Header() {
 				<NavLink
 					to="/merchandise"
 					className={({ isActive }) =>
-						`px-8 py-3 font-vermin tracking-widest transition-all ease-in-out ${
+						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
 						isActive ? 'text-rose-500' : 'text-white'
 						}`
 					}
@@ -46,7 +46,7 @@ function Header() {
 				<NavLink
 					to="/contact"
 					className={({ isActive }) =>
-						`px-8 py-3 font-vermin tracking-widest transition-all ease-in-out ${
+						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
 						isActive ? 'text-rose-500' : 'text-white'
 						}`
 					}
