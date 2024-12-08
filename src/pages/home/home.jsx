@@ -1,13 +1,13 @@
+import MatrixBackground from '../../components/matrixBackground'
+
 function Home() {
-	return (
-		<>
-			<div className='w-full h-screen absolute bg-black text-white'>
-				<div className="mt-[110px]">
-					Home
-				</div>
-			</div>
-		</>
-	)
+    return (
+        <>
+            <main className='w-full h-screen absolute'>
+                <MatrixBackground />
+            </main>
+        </>
+    )
 }
 
 export default Home;
