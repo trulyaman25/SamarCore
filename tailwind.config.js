@@ -9,7 +9,8 @@ export default {
 				vermin: ['VerminVibes'],
 				novega: ['Novega'],
 				knightWarrior: ['KnightWarrior'],
-				crossFly: ['crossFly'],
+				fastLines: ['FastLines'],
+				crossFly: ['CrossFly'],
 			}
 		},
 	},
