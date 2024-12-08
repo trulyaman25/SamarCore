@@ -17,7 +17,7 @@ export default function MatrixBackground() {
     resizeCanvas()
     window.addEventListener('resize', resizeCanvas)
 
-    const gridSize = 80
+    const gridSize = 110
     const lineHeight = 20
     const lines = []
 
