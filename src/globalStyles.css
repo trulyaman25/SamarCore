@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'VerminVibes';
+    src: local("vermin"),
+    url("src/assets/fonts/vermin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Novega';
+    src: local("novega"),
+    url("src/assets/fonts/novega.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'KnightWarrior';
+    src: local("knightWarrior"),
+    url("src/assets/fonts/knightWarrior.ttf") format("otf");
+}
+
+@font-face {
+    font-family: 'crossFly';
+    src: local("crossFly"),
+    url("src/assets/fonts/crossFly.otf") format("otf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
