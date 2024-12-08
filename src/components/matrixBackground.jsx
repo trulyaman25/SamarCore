@@ -1,100 +1,103 @@
 import { useEffect, useRef } from 'react'
 
 export default function MatrixBackground() {
-  const canvasRef = useRef(null)
+    const canvasRef = useRef(null)
 
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
+    useEffect(() => {
+        const canvas = canvasRef.current
+        if (!canvas) return
 
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
+        const ctx = canvas.getContext('2d')
+        if (!ctx) return
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-    resizeCanvas()
-    window.addEventListener('resize', resizeCanvas)
-
-    const gridSize = 110
-    const lineHeight = 20
-    const lines = []
-
-    const initLines = () => {
-      lines.length = 0
-      const columns = Math.ceil(canvas.width / gridSize)
-      
-      for (let x = 0; x < columns; x++) {
-        lines.push({
-          x: x * gridSize,
-          y: Math.random() * canvas.height,
-          speed: 3 + Math.random() * 3,
-        })
-      }
-    }
-
-    initLines()
-    window.addEventListener('resize', initLines)
-
-    const animate = () => {
-      ctx.fillStyle = 'black'
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
-
-      ctx.strokeStyle = '#1a1a1a'
-      ctx.lineWidth = 1
-
-      for (let x = 0; x <= canvas.width; x += gridSize) {
-        ctx.beginPath()
-        ctx.moveTo(x, 0)
-        ctx.lineTo(x, canvas.height)
-        ctx.stroke()
-      }
-
-      for (let y = 0; y <= canvas.height; y += gridSize) {
-        ctx.beginPath()
-        ctx.moveTo(0, y)
-        ctx.lineTo(canvas.width, y)
-        ctx.stroke()
-      }
-
-      ctx.strokeStyle = '#FFD700'
-      ctx.shadowColor = '#FFD700'
-      ctx.shadowBlur = 10
-      ctx.lineWidth = 2
-
-      lines.forEach(line => {
-        ctx.beginPath()
-        ctx.moveTo(line.x, line.y)
-        ctx.lineTo(line.x, line.y + lineHeight)
-        ctx.stroke()
-
-        line.y += line.speed
-
-        if (line.y > canvas.height) {
-          line.y = -lineHeight
-          line.speed = 3 + Math.random() * 3
+        const resizeCanvas = () => {
+            canvas.width = window.innerWidth
+            canvas.height = window.innerHeight
         }
-      })
 
-      ctx.shadowBlur = 0
+        resizeCanvas()
+        window.addEventListener('resize', resizeCanvas)
 
-      requestAnimationFrame(animate)
-    }
+        const gridSize = 110
+        const lineHeight = 20
+        const lines = []
 
-    animate()
+        const initLines = () => {
+            lines.length = 0
+            const columns = Math.ceil(canvas.width / gridSize)
 
-    return () => {
-      window.removeEventListener('resize', resizeCanvas)
-      window.removeEventListener('resize', initLines)
-    }
-  }, [])
+            for (let x = 0; x < columns; x++) {
+                lines.push({
+                    x: x * gridSize,
+                    y: Math.random() * canvas.height,
+                    speed: 3 + Math.random() * 3,
+                })
+            }
+        }
 
-  return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 -z-10"
-      style={{ background: 'black' }}
-    />
-  )
+        initLines()
+        window.addEventListener('resize', initLines)
+
+        const animate = () => {
+            ctx.fillStyle = 'black'
+            ctx.fillRect(0, 0, canvas.width, canvas.height)
+
+            ctx.strokeStyle = '#1a1a1a'
+            ctx.lineWidth = 1
+
+            for (let x = 0; x <= canvas.width; x += gridSize) {
+                ctx.beginPath()
+                ctx.moveTo(x, 0)
+                ctx.lineTo(x, canvas.height)
+                ctx.stroke()
+            }
+
+            for (let y = 0; y <= canvas.height; y += gridSize) {
+                ctx.beginPath()
+                ctx.moveTo(0, y)
+                ctx.lineTo(canvas.width, y)
+                ctx.stroke()
+            }
+
+            ctx.strokeStyle = '#FFD700'
+            ctx.shadowColor = '#FFD700'
+            ctx.shadowBlur = 10
+
+            lines.forEach(line => {
+                const opacity = 1 - (line.y / canvas.height) * 0.8
+                const lineWidth = 2 - (line.y / canvas.height) * 1
+
+                ctx.lineWidth = lineWidth
+                ctx.globalAlpha = opacity
+
+                ctx.beginPath()
+                ctx.moveTo(line.x, line.y)
+                ctx.lineTo(line.x, line.y + lineHeight)
+                ctx.stroke()
+
+                line.y += line.speed
+
+                if (line.y > canvas.height) {
+                    line.y = -lineHeight
+                    line.speed = 3 + Math.random() * 3
+                }
+            })
+
+            ctx.shadowBlur = 0
+            ctx.globalAlpha = 1
+
+            requestAnimationFrame(animate)
+        }
+
+        animate()
+
+        return () => {
+            window.removeEventListener('resize', resizeCanvas)
+            window.removeEventListener('resize', initLines)
+        }
+    }, [])
+
+    return (
+        <canvas ref={canvasRef} className="fixed inset-0 -z-10" style={{ background: 'black' }} />
+    )
 }

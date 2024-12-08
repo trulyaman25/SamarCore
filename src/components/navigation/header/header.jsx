@@ -8,13 +8,15 @@ function Header() {
 		<header className='fixed w-screen h-[110px] px-28 bg-opacity-10 backdrop-blur-lg transition-all duration-300 flex flex-row justify-between items-center border-b border-black border-opacity-20 z-50'>
 			<div className='flex flex-row justify-start items-center gap-6'>
 				<img src={samarLogo} alt="Samar Logo" width="60px" height="60px"/>
+				<h1 className='text-lg text-white'>|</h1>
+				<NavLink className='font-vermin text-3xl text-white cursor-pointer' to="/">SAMAR</NavLink>
 			</div>
 
 			<div className=''>
 				<NavLink to="/"
 					className={({ isActive }) =>
 						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
-						isActive ? 'text-rose-500' : 'text-white'
+						isActive ? 'text-rose-200' : 'text-white'
 						}`
 					}
 					>
@@ -25,7 +27,7 @@ function Header() {
 					to="/about"
 					className={({ isActive }) =>
 						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
-						isActive ? 'text-rose-500' : 'text-white'
+						isActive ? 'text-rose-200' : 'text-white'
 						}`
 					}
 					>
@@ -36,7 +38,7 @@ function Header() {
 					to="/merchandise"
 					className={({ isActive }) =>
 						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
-						isActive ? 'text-rose-500' : 'text-white'
+						isActive ? 'text-rose-200' : 'text-white'
 						}`
 					}
 					>
@@ -47,7 +49,7 @@ function Header() {
 					to="/contact"
 					className={({ isActive }) =>
 						`px-8 py-3 hover:text-rose-400 font-vermin tracking-widest transition-all ease-in-out ${
-						isActive ? 'text-rose-500' : 'text-white'
+						isActive ? 'text-rose-200' : 'text-white'
 						}`
 					}
 					>
