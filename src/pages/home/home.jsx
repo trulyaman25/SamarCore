@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import MatrixBackground from '../../components/matrixBackground';
 import OrbBackground from '../../components/orbsBackground';
-import BackgroundFall from '../../assets/illustration/BackgroundFall.png';
+import BackgroundFall from '../../assets/illustration/backgroundFall.png';
 import Soldier from '../../assets/illustration/soldier.png';
 import SamarLogo from '../../assets/logo/SamarLogoWhite.png';
 import Year25 from '../../assets/customIllustration/year25.png';
