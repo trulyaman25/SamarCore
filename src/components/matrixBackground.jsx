@@ -42,7 +42,7 @@ export default function MatrixBackground() {
             ctx.fillStyle = 'black'
             ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-            ctx.strokeStyle = '#1a1a1a'
+            ctx.strokeStyle = '#2F2B2B'
             ctx.lineWidth = 1
 
             for (let x = 0; x <= canvas.width; x += gridSize) {
@@ -98,6 +98,6 @@ export default function MatrixBackground() {
     }, [])
 
     return (
-        <canvas ref={canvasRef} className="fixed inset-0 -z-10" style={{ background: 'black' }} />
+        <canvas ref={canvasRef} className="absolute inset-0 -z-10" style={{ background: 'black' }} />
     )
 }
