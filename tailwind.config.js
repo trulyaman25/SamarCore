@@ -11,6 +11,9 @@ export default {
 				knightWarrior: ['KnightWarrior'],
 				fastLines: ['FastLines'],
 				crossFly: ['CrossFly'],
+				speedPixel: ['speedPixel'],
+				speedPixelItalic: ['speedPixelItalic'],
+				brave81: ['Brave81']
 			}
 		},
 	},

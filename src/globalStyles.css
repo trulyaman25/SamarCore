@@ -28,6 +28,30 @@
          url("src/assets/fonts/crossFly.otf") format("opentype");
 }
 
+@font-face {
+    font-family: 'speedPixel';
+    src: local("speedPixel"), 
+         url("src/assets/fonts/speedPixel.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'speedPixelItalic';
+    src: local("speedPixelItalic"), 
+         url("src/assets/fonts/speedPixelItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Brave81';
+    src: local("Brave81"), 
+         url("src/assets/fonts/Brave81.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}

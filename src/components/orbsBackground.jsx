@@ -12,8 +12,8 @@ const GlowingOrbsBackground = () => {
 		canvas.height = window.innerHeight;
 
 		const colors = [
-			{ r: 147, g: 51, b: 234 },
-			{ r: 75, g: 0, b: 130 },
+			{ r: 0, g: 0, b: 0 },
+			{ r: 0, g: 0, b: 0 },
 		];
 
 		class Orb {
@@ -96,7 +96,7 @@ const GlowingOrbsBackground = () => {
 	}, []);
 
 		return (
-			<canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full -z-10 opacity-60" />
+			<canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full -z-10 opacity-70" />
 		);
 };
 

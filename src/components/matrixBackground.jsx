@@ -39,9 +39,11 @@ export default function MatrixBackground() {
         window.addEventListener('resize', initLines)
 
         const animate = () => {
-            ctx.fillStyle = 'black'
-            ctx.fillRect(0, 0, canvas.width, canvas.height)
+            // Clear the canvas instead of filling with black
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
 
+            // Set grid line opacity
+            ctx.globalAlpha = 0.2
             ctx.strokeStyle = '#2F2B2B'
             ctx.lineWidth = 1
 
@@ -59,6 +61,8 @@ export default function MatrixBackground() {
                 ctx.stroke()
             }
 
+            // Reset opacity for lines
+            ctx.globalAlpha = 1
             ctx.strokeStyle = '#FFD700'
             ctx.shadowColor = '#FFD700'
             ctx.shadowBlur = 10
@@ -98,6 +102,6 @@ export default function MatrixBackground() {
     }, [])
 
     return (
-        <canvas ref={canvasRef} className="absolute inset-0 -z-10" style={{ background: 'black' }} />
+        <canvas ref={canvasRef} className="absolute inset-0 -z-10" />
     )
 }
