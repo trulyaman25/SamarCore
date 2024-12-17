@@ -1,49 +1,49 @@
 @font-face {
     font-family: 'VerminVibes';
     src: local("VerminVibes"), 
-         url("assets/fonts/vermin.ttf") format("truetype");
+         url("src/assets/fonts/vermin.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Novega';
     src: local("Novega"), 
-         url("assets/fonts/novega.ttf") format("truetype");
+         url("src/assets/fonts/novega.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'KnightWarrior';
     src: local("KnightWarrior"), 
-         url("assets/fonts/knightWarrior.otf") format("opentype");
+         url("src/assets/fonts/knightWarrior.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'FastLines';
     src: local("FastLines"), 
-         url("assets/fonts/fastLines.otf") format("opentype");
+         url("src/assets/fonts/fastLines.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'CrossFly';
     src: local("CrossFly"), 
-         url("assets/fonts/crossFly.otf") format("opentype");
+         url("src/assets/fonts/crossFly.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'speedPixel';
     src: local("speedPixel"), 
-         url("assets/fonts/speedPixel.ttf") format("truetype");
+         url("src/assets/fonts/speedPixel.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'speedPixelItalic';
     src: local("speedPixelItalic"), 
-         url("assets/fonts/speedPixelItalic.ttf") format("truetype");
+         url("src/assets/fonts/speedPixelItalic.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Brave81';
     src: local("Brave81"), 
-         url("assets/fonts/Brave81.ttf") format("truetype");
+         url("src/assets/fonts/Brave81.ttf") format("truetype");
 }
 
 @tailwind base;
