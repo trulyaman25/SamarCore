@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import '../../../../globalStyles.css';
 import HoverAudio from '../../../assets/audio/buttonHoverGTA.mp3';
-import samarLogo from '../../../assets/logo/favicon.png';
+import samarLogo from '/favicon.png';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
