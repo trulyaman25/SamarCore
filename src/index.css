@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'VerminVibes';
+  src: url('https://drive.google.com/uc?export=view&id=1Kh5QbJly3oeE9BzaTtIejzXfy4C-otvc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novega';
+  src: url('https://drive.google.com/uc?export=view&id=1xrvyBdEdqgR7l9elk3Vbp8HhgOrZA7bU') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KnightWarrior';
+  src: url('https://drive.google.com/uc?export=view&id=1kRYbSviu1aAoXZHZTYoPCWz2LCaK016z') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FastLines';
+  src: url('https://drive.google.com/uc?export=view&id=1Ve6aslrvfptmUTzsiY5lW4h_i_YSyKgV') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CrossFly';
+  src: url('https://drive.google.com/uc?export=view&id=1k30BeFf8n7iLWv-3p8rhID4IAvtHdV29') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpeedPixel';
+  src: url('https://drive.google.com/uc?export=view&id=13gB_PKRpayU2hH7OA8lKjORs7SnfVZRv') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'SpeedPixelItalic';
+  src: url('https://drive.google.com/uc?export=view&id=1C9xvHnvHez336qJm65vOsGtG2ebwsM_W') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brave81';
+  src: url('https://drive.google.com/uc?export=view&id=1hXb8BFmn4E5PN4l7Q21otrILZtwcIAq9') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+}

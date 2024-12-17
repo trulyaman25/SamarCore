@@ -1,4 +1,4 @@
-import './globalStyles.css'
+import '../globalStyles.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/navigation/header/header';
@@ -7,9 +7,10 @@ import About from './pages/about/about';
 import Merchandise from './pages/merchandise/merchandise';
 import Contact from './pages/contact/contact';
 import Register from './pages/register/register';
+import SUC from './pages/underConstruction.jsx';
 import Footer from './components/navigation/footer/footer';
 
-function routes() {
+function RoutesConfig() {
 	return (
 		<>
 			<Router>
@@ -20,6 +21,7 @@ function routes() {
 					<Route path="/merchandise" element={<Merchandise />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/register" element={<Register />} />
+					<Route path="*" element={<SUC />} />
 				</Routes>
 				{/* <Footer /> */}
 			</Router>
@@ -27,4 +29,4 @@ function routes() {
 	)
 }
 
-export default routes;
+export default RoutesConfig;

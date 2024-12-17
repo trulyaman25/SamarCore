@@ -35,7 +35,7 @@ function Background() {
 
             <audio ref={audioRef} src={BGAudio} loop autoPlay muted={isMuted} />
             <button onClick={toggleAudio} 
-                    className="fixed bottom-10 right-10 p-3 border-2 border-rose-500 backdrop-blur-lg rounded-full hover:scale-95 transition-all ease-out"
+                    className="fixed bottom-10 right-10 p-3 border-2 border-rose-500 backdrop-blur-lg rounded-full hover:scale-95 transition-all ease-out z-30"
                     onMouseEnter={handleHover}
             >
                 <img src={isMuted ? MuteIcon : UnMuteIcon} alt={isMuted ? 'Mute' : 'Unmute'} className="w-8 h-8" />

@@ -3,12 +3,12 @@ import { useRef } from 'react';
 import '../homeStyles.css'
 
 import BackgroundFall from '../../../assets/illustration/backgroundFall.png';
-import Soldier from '../../../assets/illustration/Soldier.png';
-import PubgAvatar from '../../../assets/customIllustration/pubgAvatar.png';
-import SamarLogo from '../../../assets/logo/SamarLogoWhite.png';
+import Soldier from '../../../assets/illustration/soldier.png';
+import SamarLogo from '../../../assets/logo/samarLogoWhite.png';
 import SamarIntroText from '../../../assets/customIllustration/samarIntroText.png';
 
 import HoverAudio from '../../../assets/audio/buttonHoverGTA.mp3';
+import SwordAnimation from '../../../components/swordAnimation.jsx';
 
 function LandingSection() {
     const hoverAudioRef = useRef(new Audio(HoverAudio));
@@ -19,7 +19,7 @@ function LandingSection() {
 
     return (
         <>
-            <section className="w-screen h-screen flex flex-row justify-center items-center overflow-hidden">
+            <section id="home" className="w-screen h-screen flex flex-col justify-center items-center overflow-hidden">
                 <main className="w-[80%] h-screen max-h-screen flex flex-row justify-between items-center">
                     <div className='h-screen'>
                         <img src={BackgroundFall} alt="Background Fall" className="h-full object-cover" />
@@ -36,11 +36,12 @@ function LandingSection() {
                             <img src={SamarIntroText} alt="Samar Logo" className="w-[1000px]" />
                         </h1>
                 
-                        <p className='w-[600px] mt-8 font-speedPixel text-3xl bold text-center tracking-widest drop-shadow-[2px_2px_0px_#000]'>
+                        <p className='w-[600px] mt-8 font-fastLines bold text-3xl bold text-center tracking-widest drop-shadow-[2px_2px_0px_#000]'>
                             A Flagship Sport's Event Organized by
-                            <a className='text-rose-500 font-speedPixelItalic hover:cursor-pointer hover:text-rose-700 transition-all ease-in-out' href="https://shaurya-nitrr.netlify.app/" target="_blank">
+                            <a className='text-rose-500 font-fastLines hover:cursor-pointer hover:text-rose-700 transition-all ease-in-out' href="https://shaurya-nitrr.netlify.app/" target="_blank">
                                 Shaurya Sports Committee
-                            </a>, NITRR
+                            </a>
+                            , NITRR
                         </p>
                     
                         <NavLink  to="/register"  className='mt-8 border-2 px-16 py-4 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75' onMouseEnter={handleHover} > 
@@ -58,9 +59,11 @@ function LandingSection() {
                             </div>
                         </div>
                     </div>
-                    
                 </main>
             </section>
+
+            <SwordAnimation/>
+
         </>
     )
 }
