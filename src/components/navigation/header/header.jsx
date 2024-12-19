@@ -17,7 +17,7 @@ function Header() {
     };
 
     return (
-        <header className='fixed w-screen h-[80px] px-6 md:px-28 bg-slate-800 bg-opacity-30 backdrop-blur-xl transition-all duration-300 flex flex-row justify-between items-center border-b border-white border-opacity-50 z-50'>
+        <header className='fixed top-0 w-screen h-[80px] px-6 md:px-28 bg-slate-800 bg-opacity-30 backdrop-blur-xl transition-all duration-300 flex flex-row justify-between items-center border-b border-white border-opacity-50 z-50'>
             {/* Logo and Title */}
             <div className='flex flex-row justify-start items-center gap-6'>
                 <img src={samarLogo} alt="Samar Logo" width="60px" height="60px" />
