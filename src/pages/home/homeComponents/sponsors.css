@@ -1,0 +1,46 @@
+.home-page-bg {
+    background: url('../../../assets/customillustration/homebackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  .Sponsers {
+    margin-top: 50px;
+    background: transparent;
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .image_wrapper {
+    margin: 0px 30px;
+  }
+  
+  .image_wrapper img {
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image_wrapper img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Blurred Transparent Box */
+  .marquee-container {
+    margin: 0 auto;
+    width: 90%; /* Adjust the width as needed */
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 20px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
