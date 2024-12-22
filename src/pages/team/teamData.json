@@ -289,6 +289,15 @@
   ],
   "Event Management": [
     {
+      "Name": "Yash Kumar Gupta",
+      "Branch": "Metallurgical and materials",
+      "Domain": "EM",
+      "designation": "HC",
+      "Photo": "./src/assets/TeamImagesHC/YashKumarGupta.jpg",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/"
+    },
+    {
       "Name": "Vishal Kumar",
       "Branch": "Mining",
       "Domain": "EM",
@@ -348,15 +357,6 @@
       "Domain": "Event management",
       "designation": "HC",
       "Photo": "./src/assets/TeamImagesHC/SharvariDambhe.jpg",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
-      "Name": "Yash Kumar Gupta",
-      "Branch": "Metallurgical and materials",
-      "Domain": "EM",
-      "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/YashKumarGupta.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
