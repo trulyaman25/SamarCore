@@ -30,7 +30,7 @@ function RoutesConfig() {
   };
 
 
-  const videoSource = "./src/assets/customIllustration/jump356.mp4";
+  const videoSource = "./src/assets/customIllustration/uni1033.mp4";
 
   return (
     <Router>
@@ -53,7 +53,7 @@ function RoutesConfig() {
             Your browser does not support the video tag.
           </video>
 
-          {setTimeout(() => setShowHomepage(3), 13000)} 
+          {setTimeout(() => setShowHomepage(3), 10000)} 
         </>
       ) : (
         <>
