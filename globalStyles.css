@@ -49,7 +49,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+#root{
+    padding: 0px;
+}
 html, body {
     overflow-x: hidden;
     margin: 0;
