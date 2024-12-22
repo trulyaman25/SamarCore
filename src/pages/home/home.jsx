@@ -5,15 +5,19 @@ import ImageGallery from './homeComponents/imageGallery.jsx';
 import Sponsors from './homeComponents/sponsors.jsx';
 import Timeline from './homeComponents/timeline.jsx';
 
+
 function Home() {
+
     return (
         <>
-            <HomeBackground />
-            <MatrixBackground />
-            <LandingSection />
-            <ImageGallery />
-            <Timeline/>
-            <Sponsors/>
+            <div className="homepage">
+                <HomeBackground />
+                <MatrixBackground />
+                <LandingSection />
+                <ImageGallery />
+                <Timeline />
+                <Sponsors />
+            </div>
         </>
     );
 }
