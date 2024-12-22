@@ -11,7 +11,7 @@ function Register() {
     <>
       <HomeBackground />
       <div className="flex w-full align-middle justify-center pt-5">
-        <div className="w-[90%] py-10">
+        <div className="w-[90%] py-10 mt-[80px]">
           <div className="flex gap-10 flex-wrap justify-center">
             {SPORTS.map((sport, index) => (
               <div

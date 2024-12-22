@@ -2,7 +2,7 @@ import React from "react";
 
 const TeamLeaderForm = ({leaderDetails, setLeaderDetails, enabled=false}) => {
   return (
-    <div className="text-gray-200">
+    <div>
       <h3>Team Leader</h3>
       <div className="flex flex-col space-y-3">
         <input

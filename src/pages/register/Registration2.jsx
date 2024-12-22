@@ -87,7 +87,7 @@ const Registration2 = () => {
         <>
           <HomeBackground />
           <div className="flex align-middle justify-center w-full">
-            <div className="w-4/5 flex justify-start items-start border backdrop-blur-[5px] border-gray-200 my-[80px] z-10 rounded-2xl">
+            <div className="w-4/5 flex justify-start items-start border backdrop-blur-[5px] border-gray-200 mt-[160px] mb-[80px] z-10 rounded-2xl">
               <div className="min-w-96">
                 <Rules sport={sport} />
               </div>
