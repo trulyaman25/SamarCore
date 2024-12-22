@@ -2,7 +2,7 @@ import React from "react";
 
 const InputForm = ({ ques, value, setValue, enabled = false }) => {
   return (
-    <div className="my-2 text-gray-200">
+    <div className="my-2">
       <h3>{ques}</h3>
       <input
         type="text"

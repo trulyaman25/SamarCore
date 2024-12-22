@@ -24,7 +24,7 @@ const MemberForm = ({ value, setValue, count, enabled = false }) => {
   return (
     <>
       {Array.from({ length: count }, (_, index) => (
-        <div key={index} className="text-gray-200">
+        <div key={index}>
           <h3>{`Team Member ${index + 2}`}</h3>
           <div className="flex flex-col space-y-3">
             <input
